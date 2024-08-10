@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Ajudo Shoes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .back-button {
+            background-color: #007BFF; /* Blue background */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Panel - Ajudo Shoes</h1>
+    </header>
+    <main>
+        <button onclick="window.location.href='index.html'" class="back-button">Back to Homepage</button>
+        <section>
+            <h2>Add New Shoe</h2>
+            <form id="admin-form" class="admin-form" enctype="multipart/form-data">
+                <label for="shoe-name">Shoe Name:</label>
+                <input type="text" id="shoe-name" name="shoe-name" required><br>
+                
+                <label for="shoe-price">Price (Ksh):</label>
+                <input type="number" id="shoe-price" name="shoe-price" required><br>
+                
+                <label for="shoe-color">Color:</label>
+                <input type="text" id="shoe-color" name="shoe-color" required><br>
+                
+                <label for="shoe-size">Sizes (Separate by comma):</label>
+                <input type="text" id="shoe-size" name="shoe-size" required><br>
+                
+                <label for="shoe-image">Upload Image:</label>
+                <input type="file" id="shoe-image" name="shoe-image" accept="image/*" required><br>
+                
+                <label for="phone-number">Admin Phone Number:</label>
+                <input type="text" id="phone-number" name="phone-number" required><br>
+                
+                <button type="submit" class="submit-button">Add Shoe</button>
+            </form>
+        </section>
+        <section>
+            <h2>Update Existing Shoes</h2>
+            <div id="admin-gallery" class="photo-grid">
+                <!-- Existing shoes will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>2024 All rights by Ham</p>
+    </footer>
+    <script src="admin.js"></script>
+</body>
+</html>

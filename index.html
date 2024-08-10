@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajudo Shoes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Ajudo Shoes</h1>
+        <button onclick="location.href='https://wa.me/254703446936'" class="contact-button">Contact Us</button>
+        <button onclick="showLoginModal()" class="login-button">Admin Login</button>
+    </header>
+    <main>
+        <div id="login-modal" style="display: none;">
+            <div class="modal-content">
+                <span onclick="hideLoginModal()" class="close">&times;</span>
+                <h2>Admin Login</h2>
+                <form id="login-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+        <div id="shoe-gallery">
+            <!-- Photo Cards -->
+            <!-- Example photo cards, add more up to 20 -->
+            <div class="photo-card">
+                <img src="shoe1.jpg" alt="Shoe 1">
+                <p>Shoe Model 1</p>
+                <button onclick="location.href='https://wa.me/254703446936?text=I%20am%20interested%20in%20Shoe%20Model%201'" class="buy-button">Buy Now</button>
+            </div>
+            <!-- Add more photo cards up to 20 -->
+        </div>
+    </main>
+    <footer>
+        <p>2024 All rights by Ham</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

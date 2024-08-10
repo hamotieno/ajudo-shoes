@@ -1,0 +1,181 @@
+/* Basic reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #ff6600; /* Orange header background */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* Button styling */
+.contact-button, .login-button {
+    background-color: #ffffff; /* White buttons */
+    color: #ff6600; /* Orange text */
+    border: 2px solid #ff6600;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+
+.contact-button:hover, .login-button:hover {
+    background-color: #ff9900; /* Slightly darker orange on hover */
+}
+
+/* Shoe gallery styling */
+#shoe-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
+}
+
+/* Photo card styling */
+.photo-card {
+    background-color: #ffffff; /* White background for photo cards */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%; /* Full width of the grid column */
+    max-width: 300px; /* Ensure uniform size */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.buy-button {
+    background-color: #ff6600; /* Orange buy button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.buy-button:hover {
+    background-color: #ff9900; /* Slightly darker orange on hover */
+}
+
+/* Modal styling */
+#login-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #ffffff; /* White modal background */
+    border-radius: 8px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+.modal-content h2 {
+    color: #ff6600; /* Orange heading */
+    margin-bottom: 1rem;
+}
+
+.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ff6600;
+}
+
+.close:hover {
+    color: #ff9900; /* Slightly darker orange on hover */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff6600; /* Orange login button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #ff9900; /* Slightly darker orange on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #ff6600; /* Orange footer background */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* General button styles */
+.delete-button {
+    background-color: #dc3545; /* Red background for delete button */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
